@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+	<head>
+    <title>xRecord</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+    <script type="text/javascript" src="javascripts/jquery.js"></script>
+		<script type="text/javascript" src="javascripts/xrecord_widget.js"></script>
+		<script type="text/javascript" src="javascripts/swfobject.js"></script>
+		<script type="text/javascript">
+      var flashvars = { 'rtmp_app_url': 'rtmp://projectx-web.craniumisajar.com/rtmp',
+                        'rtmp_stream_name': 'recording.flv' };
+      var params = { allowScriptAccess: 'always' }
+		  swfobject.embedSWF("objects/XRecordWidget.swf", "xrecord_widget", "320", "240", 
+                         "10.0.0", "objects/expressInstall.swf", flashvars, params);
+    </script>
+    <link rel="stylesheet" type="text/css" href="stylesheets/xrecord_widget.css"/>
+	</head>
+	<body>
+		<div id="xrecord_widget">
+			<h1>You need Flash Player to record...</h1>
+			<p><a href="http://www.adobe.com/go/getflashplayer"><img src="http://www.adobe.com/images/shared/download_buttons/get_flash_player.gif" alt="Get Adobe Flash player" /></a></p>
+		</div>
+    <div id="webcam_controls">
+      <div id="record_button" class="button record hidden"></div>
+    </div>
+	</body>
+</html>

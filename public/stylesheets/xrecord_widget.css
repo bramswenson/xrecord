@@ -1,0 +1,8 @@
+#webcam_controls { 
+  width: 320px;
+}
+
+.button { width: 32px; height: 32px; }
+.record { background-image: url("../images/record.png");  } 
+.stop   { background-image: url("../images/stop.png");  } 
+.hidden { display: none;  } 
